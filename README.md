@@ -2,7 +2,7 @@
 # 🌟 **Senior's Discord Community**  
 🚀 *Welcome to the ultimate Discord server for dating, gaming, and socializing!*  
 
-![Discord Banner](https://www.spymc.xyz/senior)
+! [ABOUT OWNER](https://www.spymc.xyz/senior)
 
 ---
 
