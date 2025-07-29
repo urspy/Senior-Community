@@ -53,7 +53,7 @@ Senior’s Discord is a **fun, engaging, and active** community where you can me
 🌐 **Website:** [www.spymc.xyz](https://www.spymc.xyz)  
 🔗 **Discord:** [senior.spymc.xyz](https://senior.spymc.xyz)  
 📷 **Instagram:** [@ilysenior](https://instagram.com/ilysenior)  
-🎮 **YouTube:** [@seniorsenpaiyt](https://www.youtube.com/@seniorsenpaiyt)  
+🎮 **YouTube:** [@yoursenioryt](https://www.youtube.com/@yoursenioryt)  
 🐦 **X (Twitter):** [@yoursenioryt](https://twitter.com/yoursenioryt)  
 🕹️ **SpyMC Network:** [spymc.xyz](https://www.spymc.xyz)  
 📧 **Email:** support@spymc.xyz  
