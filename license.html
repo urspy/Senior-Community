@@ -1,92 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Senior Plugin License (SPL) — yoursenior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#0f1720;--card:#0b1220;--muted:#9aa4b2;--accent:#5eead4;--text:#e6eef6}
-    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071025 0%, #06111a 100%);color:var(--text)}
-    .wrap{max-width:900px;margin:36px auto;padding:28px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));box-shadow:0 8px 30px rgba(2,6,23,0.6)}
-    header{display:flex;align-items:center;gap:16px}
-    .logo{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#38bdf8);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052328}
-    h1{margin:0;font-size:20px;letter-spacing:0.2px}
-    p.lead{margin:6px 0 20px;color:var(--muted)}
-    section{margin:18px 0;padding:18px;border-radius:10px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.02)}
-    h2{margin:0 0 8px;font-size:14px}
-    .code{font-family:ui-monospace,Menlo,Monaco,Roboto Mono,monospace;background:rgba(0,0,0,0.25);padding:10px;border-radius:8px;color:var(--accent);display:inline-block}
-    ul{margin:8px 0 0 18px;color:var(--muted)}
-    footer{margin-top:18px;color:var(--muted);font-size:13px}
-    .cta{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,#0ea5a4,#06b6d4);color:#04292b;text-decoration:none;font-weight:600}
-    .meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
-    .meta b{color:var(--text)}
+    :root {
+      --primary: #00f0ff;
+      --accent: #00ffaa;
+      --dark: #0a0a12;
+      --darker: #050508;
+      --light: #e0e0ff;
+      --card-bg: rgba(15, 15, 25, 0.9);
+      --card-border: rgba(0, 240, 255, 0.2);
+      --text-muted: rgba(200, 200, 255, 0.6);
+    }
+    html, body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(180deg, var(--darker) 0%, var(--dark) 100%);
+      color: var(--light);
+      line-height: 1.6;
+    }
+    .wrap {max-width: 900px; margin: 36px auto; padding: 28px; border-radius: 12px; background: var(--card-bg); border: 1px solid var(--card-border); box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);}
+    header {display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--card-border);}
+    h1 {margin: 0; font-family: 'Orbitron', sans-serif; font-size: 24px; color: var(--primary); text-shadow: 0 0 5px rgba(0, 240, 255, 0.5);}
+    .lead {margin: 6px 0 20px; color: var(--text-muted);}
+    section {margin: 24px 0; padding: 20px; border-radius: 10px; background: rgba(11, 18, 32, 0.6); border: 1px solid var(--card-border);}
+    h2 {margin: 0 0 12px; font-family: 'Orbitron', sans-serif; font-size: 18px; color: var(--accent); padding-bottom: 8px; border-bottom: 1px solid var(--card-border);}
+    .code {font-family: ui-monospace, Menlo, Monaco, Roboto Mono, monospace; background: rgba(0,0,0,0.25); padding: 8px 12px; border-radius: 6px; color: var(--accent); display: inline-block;}
+    pre.code {padding: 15px; overflow-x: auto; margin: 15px 0; background: rgba(0,0,0,0.3); border-radius: 8px;}
+    ul {margin: 8px 0 0 18px; color: var(--text-muted);}
+    li {margin-bottom: 6px;}
+    footer {margin-top: 28px; padding-top: 20px; color: var(--text-muted); font-size: 13px; border-top: 1px solid var(--card-border); text-align: center;}
+    strong {color: var(--accent);}
+    a {color: var(--primary); text-decoration: none;}
+    a:hover {text-decoration: underline; color: var(--accent);}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="logo">YS</div>
       <div>
         <h1>Senior Plugin License (SPL) — v1.0</h1>
-        <p class="lead">Author: <strong>yoursenior</strong> &mdash; Professional license tailored for Minecraft plugin developers. Clear. Strong. Practical.</p>
+        <p class="lead">Author: <strong>yoursenior</strong> &mdash; License protecting all official plugins by <a href="https://modrinth.com/user/YourSenior" target="_blank">YourSenior</a>.</p>
       </div>
     </header>
 
     <section>
       <h2>Quick Summary</h2>
-      <p class="lead">This license protects the intellectual property of the plugin created by <strong>yoursenior</strong>. It describes permitted uses, restrictions, liability limits, and how to request permissions.</p>
-      <div class="meta">
-        <div><b>Slug:</b> <span class="code">senior-plugin-license</span></div>
-        <div><b>Recommended use:</b> <span>Official plugin releases, GitHub repos, plugin pages</span></div>
-      </div>
+      <p class="lead">This license protects the intellectual property of plugins created by <strong>yoursenior</strong>. It defines permitted use, redistribution rules, commercial use terms, and liability limits.</p>
     </section>
 
     <section>
       <h2>Full License Text</h2>
-      <p><strong>1. Ownership</strong><br>The plugin and its source code (the "Plugin") are copyrighted and owned by <strong>yoursenior</strong>. Unless explicitly stated, all rights are reserved.</p>
-
-      <p><strong>2. Permitted Use</strong><br>You may download, install, and run the Plugin on servers you operate. Personal, educational, and non-commercial use is allowed without a separate license.</p>
-
-      <p><strong>3. Redistribution & Mirrors</strong><br>Redistribution of the Plugin, or any modified version of it, outside of the official channels provided by <strong>yoursenior</strong> is strictly prohibited. This includes reuploads, mirrors, or packaging the Plugin in a third-party download without written permission. You may share direct links to the official release.</p>
-
-      <p><strong>4. Modification & Derivative Works</strong><br>Reverse engineering, decompiling, modifying, or creating derivative works is prohibited except when explicit written permission is granted by <strong>yoursenior</strong>. Forks or patches distributed publicly must be approved in writing.</p>
-
-      <p><strong>5. Commercial Use</strong><br>Commercial use (selling the Plugin, bundling it in paid distributions, or selling access to a modified version) requires a commercial license from <strong>yoursenior</strong>. Running the unmodified Plugin on monetized servers is allowed under Mojang's EULA, provided you do not sell the Plugin itself.</p>
-
-      <p><strong>6. Credits & Attribution</strong><br>Author credits must remain visible in the Plugin's description, metadata, and source files. Removing, altering, or hiding attribution is a violation of this license.</p>
-
-      <p><strong>7. Support, Updates & Compatibility</strong><br>Updates and support are provided at the discretion of <strong>yoursenior</strong>. No compatibility guarantees are made across future Minecraft or platform versions. Maintenance contracts can be negotiated separately.</p>
-
-      <p><strong>8. Liability & Warranty</strong><br>The Plugin is provided "as is". <strong>yoursenior</strong> disclaims all warranties, express or implied. Under no circumstances will the author be liable for any direct, indirect, incidental, special, or consequential damages resulting from use, loss of data, or server downtime.</p>
-
-      <p><strong>9. Termination</strong><br>Violation of any provision of this license will result in immediate termination of your license to use the Plugin. The author reserves the right to blacklist or pursue legal remedies against violators.</p>
-
-      <p><strong>10. Exceptions & Permissions</strong><br>Requests for redistribution, modification, or commercial licensing should be sent in writing to the author's contact. Permissions may be granted on a case-by-case basis and will be recorded in writing.</p>
+      <p><strong>1. Ownership:</strong> All plugins and their source code are owned by <strong>yoursenior</strong>. All rights reserved.</p>
+      <p><strong>2. Permitted Use:</strong> You may use the plugin on your servers for personal or educational purposes. Non-commercial use is allowed.</p>
+      <p><strong>3. Redistribution:</strong> Reuploads, mirrors, or redistributions are forbidden without written consent. Share only official download links.</p>
+      <p><strong>4. Modification:</strong> Decompilation, modification, or derivative works require explicit permission from <strong>yoursenior</strong>.</p>
+      <p><strong>5. Commercial Use:</strong> Running unmodified plugins on monetized servers is allowed under Mojang’s EULA. Selling or bundling requires a commercial license.</p>
+      <p><strong>6. Credits:</strong> Author credit must remain intact in metadata and descriptions.</p>
+      <p><strong>7. Support & Updates:</strong> Provided at the discretion of <strong>yoursenior</strong>. No compatibility guarantee.</p>
+      <p><strong>8. Liability:</strong> Provided “as is”, without warranty. The author is not liable for damages or data loss.</p>
+      <p><strong>9. Termination:</strong> Violation revokes license immediately. Author may blacklist violators.</p>
+      <p><strong>10. Permissions:</strong> Requests for redistribution, modifications, or commercial licenses must be submitted in writing.</p>
     </section>
 
     <section>
-      <h2>Legal & Contact</h2>
+      <h2>Contact</h2>
       <ul>
-        <li><strong>Contact Email:</strong> <span class="code">help@spymc.xyz</span> (replace with your real address)</li>
-        <li><strong>Discord Id:</strong> <span class="code">ilysenior</span></li>
+        <li><strong>Email:</strong> <span class="code">help@spymc.xyz</span></li>
         <li><strong>Discord:</strong> <span class="code">https://discord.spymc.xyz</span></li>
       </ul>
-
-      <p class="lead">To request permission, commercial licensing, or report abuse, send a clear request with the server URL, intended use, and contact details. Keep subject lines concise: <em>"SPL Permission Request — [ServerName]"</em>.</p>
-    </section>
-
-    <section>
-      <h2>Recommended Repository & Metadata</h2>
-      <p>Use the following metadata block in your plugin's repository <small>(place in README or plugin.yml)</small>:</p>
-      <pre class="code">name: YourPluginName
-author: yoursenior
-license: Senior Plugin License (SPL) v1.0
-license_url: https://senior.spymc.xyz/licenses</pre>
-      <p class="lead">Keep the slug simple: <span class="code">Plugins</span> or <span class="code">"name"</name></span>. Do not add version numbers to the project slug.</p>
     </section>
 
     <footer>
-      <small>© <span id="year"></span>All rights reserved. This license is a legal document — consult a lawyer for jurisdiction-specific enforcement or changes.</small>
+      <small>© <span id="year"></span> yoursenior. All rights reserved.</small>
     </footer>
   </div>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
