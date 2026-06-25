@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SENIOR`S | Empire</title>
+    <title>Ankit Kumar Singh | Empire</title>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">
@@ -417,6 +417,68 @@
         }
         .project-card.clickable:hover .click-hint {
             color: var(--accent-2);
+        }
+
+        /* ── PLUGIN CARDS (compact) ── */
+        .plugin-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 18px;
+            margin-top: 10px;
+        }
+        .plugin-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-sm);
+            padding: 18px 20px;
+            border: 1px solid var(--glass-border);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+        .plugin-card:hover {
+            border-color: var(--accent-1);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-sm);
+        }
+        .plugin-card .plugin-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .plugin-card .plugin-name i {
+            color: var(--accent-2);
+            font-size: 1rem;
+        }
+        .plugin-card .plugin-desc {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin: 6px 0 10px 0;
+            line-height: 1.5;
+            flex: 1;
+        }
+        .plugin-card .plugin-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
+            margin-top: 4px;
+        }
+        .plugin-card .plugin-downloads {
+            color: var(--accent-4);
+            font-weight: 600;
+        }
+        .plugin-card .plugin-link {
+            color: var(--accent-2);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        .plugin-card .plugin-link:hover {
+            color: var(--accent-3);
+            text-decoration: underline;
         }
 
         /* ── SKILLS ── */
@@ -880,6 +942,9 @@
             .skills-container {
                 grid-template-columns: 1fr 1fr;
             }
+            .plugin-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 520px) {
@@ -950,6 +1015,9 @@
             .social-link i {
                 font-size: 1.1rem;
             }
+            .plugin-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -982,19 +1050,18 @@
             <img src="https://i.ibb.co/1JwvSRQM/minecraft-title.png" alt="SpyMC" class="logo" />
         </div>
 
-        <h1>ANKIT KUMAR SINGH</h1>
+        <h1>Ankit Kumar Singh</h1>
         <p class="subtitle">One-man empire · code · strategy · silent operations</p>
 
         <!-- ═══ PROFILE ═══ -->
         <div class="content-section" id="profileSection">
             <div class="profile-card">
                 <div class="profile-image">
-                    <img src="https://i.ibb.co/pBMH52Zg/Screenshot-2025-04-19-172137.png" alt="YourSenior" />
+                    <img src="https://i.ibb.co/pBMH52Zg/Screenshot-2025-04-19-172137.png" alt="Ankit Kumar Singh" />
                 </div>
                 <div class="profile-info">
-                    <h2 class="profile-name">ANKIT KUMAR SINGH</h2>
+                    <h2 class="profile-name">Ankit Kumar Singh</h2>
                     <p class="profile-tagline">"People don't see ghosts until they haunt them."</p>
-                    <!-- NEW BIO -->
                     <p class="profile-bio">
                         Highly skilled Server Support and Infrastructure Specialist with extensive, hands-on knowledge
                         of game server hosting environments and backend systems management. Expert in Linux server
@@ -1006,7 +1073,6 @@
                         complex technical escalations, and build engaging digital communities that drive long-term
                         brand loyalty.
                     </p>
-                    <!-- UPDATED DETAILS: Removed Status & Aura, Callsigns = Senior, Age = 20 -->
                     <div class="profile-details">
                         <div class="detail-item"><div class="detail-label">Callsigns</div><div class="detail-value">Senior</div></div>
                         <div class="detail-item"><div class="detail-label">Age</div><div class="detail-value">20</div></div>
@@ -1164,6 +1230,71 @@
             </div>
         </div>
 
+        <!-- ═══ MINECRAFT PLUGINS (NEW) ═══ -->
+        <div class="content-section" id="pluginsSection">
+            <h2 class="section-title"><i class="fas fa-plug"></i> Minecraft Plugins</h2>
+            <div class="glow-divider"></div>
+            <p class="section-subtitle">Published on Modrinth — used by server owners worldwide</p>
+
+            <div class="plugin-grid">
+                <!-- SimpleAnnouncer -->
+                <div class="plugin-card">
+                    <div class="plugin-name">
+                        <i class="fas fa-bullhorn"></i> SimpleAnnouncer
+                    </div>
+                    <div class="plugin-desc">
+                        Clean, efficient timed broadcast plugin with single config.txt control.
+                    </div>
+                    <div class="plugin-meta">
+                        <span class="plugin-downloads"><i class="fas fa-download"></i> 4,000+</span>
+                        <a href="https://modrinth.com/plugin/simpleannouncer" target="_blank" rel="noopener" class="plugin-link">View on Modrinth →</a>
+                    </div>
+                </div>
+
+                <!-- RtpQueue Advance -->
+                <div class="plugin-card">
+                    <div class="plugin-name">
+                        <i class="fas fa-random"></i> RtpQueue Advance
+                    </div>
+                    <div class="plugin-desc">
+                        Random teleportation with queue-based matchmaking, GUI world selection, and safe teleport.
+                    </div>
+                    <div class="plugin-meta">
+                        <span class="plugin-downloads"><i class="fas fa-download"></i> 1,000+</span>
+                        <a href="https://modrinth.com/plugin/rtpqueue-advance" target="_blank" rel="noopener" class="plugin-link">View on Modrinth →</a>
+                    </div>
+                </div>
+
+                <!-- UniquesPlayer (simple-playercount) -->
+                <div class="plugin-card">
+                    <div class="plugin-name">
+                        <i class="fas fa-users"></i> UniquesPlayer
+                    </div>
+                    <div class="plugin-desc">
+                        Tracks unique players who have joined the server with built-in web server &amp; API.
+                    </div>
+                    <div class="plugin-meta">
+                        <span class="plugin-downloads"><i class="fas fa-download"></i> 500+</span>
+                        <a href="https://modrinth.com/plugin/simple-playercount" target="_blank" rel="noopener" class="plugin-link">View on Modrinth →</a>
+                    </div>
+                </div>
+
+                <!-- SimpleMention (simplemention) -->
+                <div class="plugin-card">
+                    <div class="plugin-name">
+                        <i class="fas fa-at"></i> SimpleMention
+                    </div>
+                    <div class="plugin-desc">
+                        Smart chat mentions with visual highlighting, sound notifications, and block list.
+                    </div>
+                    <div class="plugin-meta">
+                        <span class="plugin-downloads"><i class="fas fa-download"></i> 300+</span>
+                        <a href="https://modrinth.com/plugin/simplemention" target="_blank" rel="noopener" class="plugin-link">View on Modrinth →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- ═══ OPEN SOURCE ═══ -->
         <div class="content-section" id="opensourceSection">
             <h2 class="section-title"><i class="fab fa-github"></i> Open Source</h2>
@@ -1179,8 +1310,8 @@
                     <div class="click-hint"><i class="fas fa-arrow-right"></i> Click to load README</div>
                 </div>
 
-                <div class="project-card clickable" data-repo="MCSRVFINDER-V2" data-repo-full="KibowiSenior/MCSRVFINDER-V2">
-                    <h3 class="project-title"><i class="fas fa-search"></i> MCSRVFINDER-V2</h3>
+                <div class="project-card clickable" data-repo="MCSRVFINDER-V1" data-repo-full="KibowiSenior/MCSRVFINDER-V1">
+                    <h3 class="project-title"><i class="fas fa-search"></i> MCSRVFINDER-V1</h3>
                     <div class="project-period">GitHub</div>
                     <div class="project-description">Minecraft server discovery &amp; status checking tool.</div>
                     <div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">Minecraft</span><span class="tech-tag">API</span></div>
@@ -1359,42 +1490,6 @@
             </div>
         </div>
 
-        <!-- ═══ HARDWARE ═══ -->
-        <div class="content-section" id="hardwareSection">
-            <h2 class="section-title"><i class="fas fa-desktop"></i> Command Center</h2>
-            <div class="glow-divider"></div>
-            <p class="section-subtitle">The hardware behind the operations</p>
-
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3 class="project-title"><i class="fas fa-microchip"></i> Core Components</h3>
-                    <ul class="project-features">
-                        <li><strong>CPU:</strong> AMD Ryzen 5 5600X</li>
-                        <li><strong>GPU:</strong> RTX 3060 Ti + GTX 1080 Ti</li>
-                        <li><strong>RAM:</strong> XPG RGB 16GB DDR4</li>
-                        <li><strong>Storage:</strong> Crucial 1TB NVMe SSD</li>
-                    </ul>
-                </div>
-                <div class="project-card">
-                    <h3 class="project-title"><i class="fas fa-plug"></i> Power &amp; Structure</h3>
-                    <ul class="project-features">
-                        <li><strong>PSU:</strong> Gigabyte Aorus 750W Gold</li>
-                        <li><strong>Cooler:</strong> Ant Esports ICE 360</li>
-                        <li><strong>Mobo:</strong> MSI MAG B550M Mortar Max WiFi</li>
-                        <li><strong>Case:</strong> Circle Defender ZX1 Mid Tower</li>
-                    </ul>
-                </div>
-                <div class="project-card">
-                    <h3 class="project-title"><i class="fas fa-laptop-code"></i> Dev Environment</h3>
-                    <ul class="project-features">
-                        <li>Dual monitor battlefield</li><li>Linux / Windows dual boot</li>
-                        <li>Custom productivity workflows</li><li>24/7 operational readiness</li>
-                        <li>120 MB/S Internet</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
         <!-- ═══ CONTACT ═══ -->
         <div class="content-section" id="contactSection">
             <h2 class="section-title"><i class="fas fa-satellite-dish"></i> Contact Protocol</h2>
@@ -1412,7 +1507,7 @@
 
             <div style="margin-top:36px; text-align:center; border-top:1px solid var(--glass-border); padding-top:24px;">
                 <p style="color:var(--text-tertiary); font-size:0.85rem; letter-spacing:0.04em;">
-                    For business inquiries only &bull; © 2025 &bull; Design by <span style="color:var(--accent-4);font-weight:600;">Senior</span>
+                    For business inquiries only &bull; © 2025 &bull; Design by <span style="color:var(--accent-4);font-weight:600;">Ankit</span>
                 </p>
             </div>
         </div>
@@ -1448,8 +1543,8 @@
         function animateElements() {
             const sections = [
                 '#profileSection', '#experienceSection', '#projectsSection',
-                '#opensourceSection', '#skillsSection', '#timelineSection',
-                '#philosophySection', '#hardwareSection', '#contactSection'
+                '#pluginsSection', '#opensourceSection', '#skillsSection',
+                '#timelineSection', '#philosophySection', '#contactSection'
             ];
             sections.forEach((sel, i) => {
                 anime({
@@ -1462,7 +1557,7 @@
                 });
             });
             anime({
-                targets: '.project-card',
+                targets: '.project-card, .plugin-card',
                 translateY: [20, 0],
                 opacity: [0, 1],
                 delay: anime.stagger(80),
